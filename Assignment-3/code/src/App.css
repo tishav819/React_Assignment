@@ -1,0 +1,89 @@
+.Header {
+    display: flex;
+    margin-top: 10%;
+    height:70px;
+    width: 90%;
+    margin-left: 80px;
+    border: 1px solid rgb(236, 232, 232);
+    margin-top: 15px;
+}
+
+.HeaderContent {
+    margin-left: 45%;
+    margin-top: 15px;
+}
+
+.Printwrapper {
+    margin-left: 45%;
+    margin-top: 15px;
+}
+.EmployeeName {
+    font-weight: 700;
+}
+
+.ContactInfo {
+    height:100px;
+    width: 90%;
+    margin-left: 80px;
+    border: 1px solid rgb(236, 232, 232);
+    margin-top: 2%;
+}
+
+.Contactdet {
+    margin-top: 1.2%;
+}
+
+.ContactdetailWrapper {
+    margin: 5px;
+    font-size: 14px;
+}
+
+span.ContactdetailName{
+    font-weight: 700;
+}
+
+.Orderstatus {
+    display: flex;
+}
+
+.Statusinfo {
+    height:100px;
+    width: 90%;
+    margin-left: 80px;
+    border: 1px solid rgb(236, 232, 232);
+    margin-top: 2%;
+    background-color: rgb(233, 233, 233);
+}
+
+.StatusdetailWrapper {
+    display:inline-block;
+    
+    font-size: 14px;
+    margin: 5px;
+}
+
+div.StatusdetailName{
+    font-weight: 700;
+}
+
+.ProductInfo {
+    height:155px;
+    width: 90%;
+    margin-left: 80px;
+    border: 1px solid rgb(236, 232, 232);
+    margin-top: 2%;
+    
+}
+
+.Product1 {
+    
+    margin-left: 170px;
+    margin-top:-150px;
+    font-weight: 700;
+}
+
+.Product2 {
+    
+    margin-left: 170px;
+    margin-top:-10px;
+}
