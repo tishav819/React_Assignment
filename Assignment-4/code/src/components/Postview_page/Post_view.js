@@ -2,12 +2,12 @@ import React from 'react';
 import './Postview.css';
 import { useState } from 'react';
 import { useEffect } from 'react';
-import Header from './components/Header';
-import Post from './components/Post';
+import Header from '../Header';
+import Post from '../Post';
 
 
 
-const Postview=()=> {
+const Post_view=()=> {
   const [data,usedata] = useState([])
 
   const getData = async() => {
@@ -38,4 +38,4 @@ const Postview=()=> {
   );
 }
 
-export default Postview;
+export default Post_view;
