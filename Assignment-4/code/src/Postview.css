@@ -1,68 +1,136 @@
-.header_container {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.site-container {
+  text-align: center;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  line-height: 1.5;
+  color: black;
+  margin: 0;
+}
+
+.container {
   display: flex;
-  height:85px;
-  width:60%;
-  margin-left: 17%;
-  border: 1px solid black;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  background-image: linear-gradient(120deg, #421010, #521212 25%,#8e0f0f);;
-  border-radius: 3px;
-  font-size: larger;
+  align-items: center;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
   justify-content: space-between;
-  font-size: 30px;
-
-}
-.head {
-  margin-top: 1px;
-}
-
-.Main_container {
-  width:24%;
-  border: 2px solid rgb(239, 236, 236);
-  margin-left: 36%;
-  margin-bottom: 10px;
-  border-radius: 3px;
+  align-items: center;
+  width: 100%;
+  height: 5rem;
+  background-color: whitesmoke;
 }
 
-.middlepart {
-  display: flex;
-  justify-content: center;
-  margin-top: 8%;
+.camera {
+  margin-right: 6rem;
 }
-.dots {
-  margin-left: 87%;
-  margin-top: -20%;
+
+.camera:hover {
+  cursor: pointer;
+}
+
+h1 {
+  margin-left: 6rem;
+  cursor: pointer;
+  color: darkcyan;
+}
+
+@media only screen and (max-width: 720px) {
+  .camera {
+    margin-right: 3rem;
+  }
+
+  h1 {
+    margin-left: 3rem;
+  }
+}
+
+
+.card {
+  width: 30rem;
+  height: 30rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  margin: 5px;
+}
+
+@media only screen and (max-width: 720px) {
+  .card {
+    width: 25rem;
+    height: 26rem;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .card {
+    width: 20rem;
+    height: 23rem;
+  }
 }
 
 .name {
-  font-weight: 700;
-  margin-bottom: -10px;
-}
-.Toppart {
-  margin-left: 2%;
+  margin-left: 10px;
+  text-align: start;
 }
 
-
-.like {
-  margin-bottom: -20px;
-  color: gray;
-  font-size: small;
-  margin-top: -8px;
-  margin-left: 3px;
+.name h3:hover {
+  cursor: pointer;
 }
 
-.loc {
-  font-size: 14px;
-  color: gray;
-  margin-bottom: 20px;
+.more {
+  font-size: 1.7rem;
+  margin-right: 10px;
 }
 
+.more:hover {
+  cursor: pointer;
+}
 
-.next_part {
+.head {
   display: flex;
   justify-content: space-between;
-  font-size: smaller;
-  color: gray;
-  margin: 2px;
+}
+
+.foot {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 6px;
+  margin-right: 6px;
+  align-items: center;
+}
+
+.foot span {
+  font-size: 2rem;
+  margin-right: 5px;
+}
+
+.foot span:hover {
+  cursor: pointer;
+}
+
+.like-content {
+  margin-left: 7px;
+  text-align: start;
+}
+
+.content {
+  padding: 3px;
+  word-break: break-word;
+  font-weight: bold;
+}
+
+.img{
+  height: 25px;
 }

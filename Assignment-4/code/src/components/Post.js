@@ -1,24 +1,33 @@
-import React from 'react'
+import React from "react";
 
-export default function Post(props) {
+export default function Post({ obj }) {
+  const { name, location, likes, description, PostImage } = obj;
+  console.log(obj);
   return (
-    <div className='Main_container'>
-      <div className='Toppart'>
-          <p className='name'>{props.name}</p>
-          <p className='loc'>{props.location}</p>
-          <h1 className='dots'>...</h1>
+    <div className="card">
+      <div className="head">
+        <div className="name">
+          <h3>{name}</h3>
+          <p>{location}</p>
+        </div>
+        <div className="more">...</div>
       </div>
-      <div className='middlepart'>
-          <img src = {props.PostImage} alt="P1" />
-      </div>
-      <div className='next_part'>
-          <p className='like_one'>❤️️ 👍</p>
-          <p className='date'>{props.date}</p>
-      </div>
+
       <div>
-          <p className='like'>{props.likes} Likes</p>
-          <h3>{props.description}</h3>
+        <img src={require(`../Mock_data${PostImage}`)} alt="img" width="100%" />
+      </div>
+
+      <div className="foot">
+        <div>
+          <span>{"\u2661"}</span>
+          <span>{"\u27A2"}</span>
+        </div>
+        <div className="date">{String(new Date()).split("GMT")[0]}</div>
+      </div>
+      <div className="like-content">
+        <p>{likes} likes</p>
+        <p className="content">{description}</p>
       </div>
     </div>
   );
-};
+}

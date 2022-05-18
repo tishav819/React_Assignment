@@ -1,0 +1,28 @@
+{
+    "user": [
+      {
+        "name": "Tisha Verma",
+        "location": "Prayagraj",
+        "likes": 64,
+        "description": "Kick start your career",
+        "PostImage": "/pic1.jpg",
+        "date": "new Date()"
+      },
+      {
+        "name": "Siddhi Tiwari",
+        "location": "Mumbai",
+        "likes": 30,
+        "description": "Love to learn",
+        "PostImage": "/pic2.webp",
+        "date": "new Date()"
+      },
+      {
+        "name": "Shalini Priya",
+        "location": "Prayagraj",
+        "likes": 30,
+        "description": "Eat Code Sleep and Repeat",
+        "PostImage": "/pic3.jpg",
+        "date": "new Date()"
+      }
+    ]
+  }

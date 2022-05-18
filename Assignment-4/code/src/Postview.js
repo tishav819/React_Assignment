@@ -1,41 +1,34 @@
-import React from 'react';
-import './Postview.css';
-import { useState } from 'react';
-import { useEffect } from 'react';
-import Header from './components/Header';
-import Post from './components/Post';
+import React, { useEffect, useState } from "react";
+import Post from "./components/Post";
+import Header from "./components/Header";
+import "./Postview.css";
 
+const Postview = () => {
+  const [users, setUsers] = useState([]);
 
+  useEffect(() => {
+    async function fun() {
+      let data1 = await fetch("http://localhost:3004/user");
+      let data = await data1.json();
+      console.log(data);
+      setUsers([...data]);
+    }
 
-const Postview=()=> {
-  const [data,usedata] = useState([])
-
-  const getData = async() => {
-    let response = await fetch(`http://localhost:3004/user`);
-    let acutalData = await response.json();
-    usedata(acutalData);
-  }
-  
-  useEffect(() => {getData()}, []);
-  console.log(data);
+    fun();
+  }, []);
 
   return (
     <div className="site-container">
-      <Header/>
-      {data.map((element) => {
-        return (
-          <Post 
-            name = {element.name}
-            location = {element.location}
-            likes = {element.likes}
-            description = {element.description}
-            PostImage = {element.PostImage}
-            date = {element.date}
-          />
-        )
-      })}
+      <Header />
+      <div className="container">
+        {users.length
+          ? users.map((obj, idx) => {
+              return <Post key={"Tisha" + idx} obj={obj} />;
+            })
+          : ""}
+      </div>
     </div>
   );
-}
+};
 
 export default Postview;

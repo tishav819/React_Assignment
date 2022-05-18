@@ -1,13 +1,20 @@
-import React from 'react'
+import React from "react";
+import camera from "../Mock_data/camera.png";
 
-export default function Header(props) {
+export default function Header() {
   return (
-    <div className='header_container'>
-        
-        <h1 className='head'>◉InstaClone</h1>
-        <h1 className='head'>🎥</h1>
-        
-      
-    </div>
-  )
+    <>
+      <nav className="navbar">
+        <h1>InstaClone</h1>
+        <img
+          src={camera}
+          alt="camera"
+          width="35px"
+          height="35px"
+          className="camera"
+        />
+      </nav>
+      <hr />
+    </>
+  );
 }
