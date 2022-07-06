@@ -1,0 +1,26 @@
+{
+    "user":
+                [
+            {"name":"Siva",
+            "location":"Bengaluru",
+            "likes":64,
+            "description": "Parineeti chopra new look",
+            "PostImage": "https://th.bing.com/th/id/OIP.cCqywnMwXjpDI97q3D_kPQHaE8?w=284&h=190&c=7&r=0&o=5&dpr=1.25&pid=1.7",
+            "date": "29-03-22"
+            },
+            {"name":"Neeraj",
+            "location":"Pune",
+            "likes":30,
+            "description": "New gossips❤️",
+            "PostImage": "https://th.bing.com/th/id/OIP.VFLuFN06ZpoKwVesxfK3AQHaD4?w=291&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7",
+            "date": "01-04-22"
+            },
+            {"name":"Rahul",
+            "location":"Hyderabad",
+            "likes":30,
+            "description": "Guess who is there?",
+            "PostImage": "https://th.bing.com/th/id/OIP.nWgkUiz-U1EC-tnu-WB1_gHaE8?w=279&h=186&c=7&r=0&o=5&dpr=1.25&pid=1.7",
+            "date": "03-04-22"
+            }
+            ]
+}
